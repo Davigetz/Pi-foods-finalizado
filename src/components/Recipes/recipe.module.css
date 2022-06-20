@@ -1,0 +1,95 @@
+.container,
+.extra {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 1080px;
+}
+
+.figura {
+  margin: 0;
+  margin-top: 3rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  font-size: calc(0.4vw + 1rem);
+}
+
+.figuraInside {
+  background: rgba(245, 245, 245, 1);
+  border-radius: 0.4rem;
+  padding: 2rem 1.5rem;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+.figuraInside:hover {
+  box-shadow: 0 8px 50px #23232333;
+}
+
+.containerCaption {
+  max-width: 300px;
+}
+
+.listaDatos {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  font-size: calc(0.2vw + 0.9rem);
+  user-select: none;
+}
+
+.lista {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  font-size: calc(0.2vw + 0.9rem);
+  flex-wrap: wrap;
+}
+
+.lista > li {
+  cursor: pointer;
+  padding: 0.5rem 0.2rem;
+  user-select: none;
+}
+
+.lista > li:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.titulo {
+  margin: 0 0.2rem;
+}
+
+.subtitulo {
+  margin: 0;
+  padding: 0.7rem;
+}
+
+.letras > a {
+  text-decoration: none;
+  color: #3f5be2;
+}
+
+@media (min-width: 550) {
+  .figura {
+    flex-basis: 49%;
+  }
+}
+
+@media (min-width: 800px) {
+  .figura {
+    flex-basis: 32%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .figura {
+    flex-basis: 20%;
+  }
+}

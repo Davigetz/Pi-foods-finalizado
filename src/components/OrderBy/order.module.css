@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.frase {
+  background: #fbd088;
+  color: #574b4b;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  user-select: none;
+  font-size: calc(0.1vw + 0.5rem);
+}

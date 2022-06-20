@@ -1,0 +1,89 @@
+.container {
+  padding-top: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.prompt {
+  font-size: Calc(0.3vw + 1rem);
+  color: tomato;
+}
+
+.exito {
+  font-size: Calc(0.3vw + 1rem);
+  color: rgb(47, 255, 158);
+}
+
+.forma {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+  border-radius: 2rem;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: -0.2px;
+  font-size: Calc(0.3vw + 1rem);
+}
+.segment {
+  padding: 1rem;
+  text-align: center;
+  color: #6829b7;
+  text-shadow: 1px 1px 1px #fff;
+}
+input,
+textarea {
+  border: 0;
+  outline: 0;
+  background-color: white;
+  text-shadow: 1px 1px 0 #fff;
+  margin: 0.5rem;
+  box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+textarea {
+  border-radius: 0.5rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+input {
+  border-radius: 5rem;
+  padding: 1rem;
+}
+
+input:focus,
+textarea:focus {
+  box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
+}
+.error {
+  color: tomato;
+  font-weight: bold;
+  max-width: 370px;
+  font-size: Calc(0.2vw + 0.8rem);
+}
+
+.boton {
+  color: #ae1100;
+  font-weight: bold;
+  box-shadow: -5px -5px 20px #fff, 5px 5px 20px #babecc;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.boton:active {
+  box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
+}
+
+.boton:hover {
+  box-shadow: -2px -2px 5px #fff, 2px 2px 5px #babecc;
+}
+
+.boton:disabled,
+.boton:disabled:hover {
+  opacity: 0.5;
+}

@@ -1,0 +1,20 @@
+.container,
+.extra {
+  background: url("../../public/brooke-lark-08bOYnH_r_E-unsplash.jpg") center
+    center no-repeat fixed;
+  background-size: cover;
+  overflow: hidden;
+  height: 100%;
+}
+
+.errorContainer {
+  padding-top: 7rem;
+  display: flex;
+  justify-content: center;
+}
+
+.saludo {
+  font-size: calc(0.8vw + 1rem);
+  position: absolute;
+  margin-top: 64px;
+}

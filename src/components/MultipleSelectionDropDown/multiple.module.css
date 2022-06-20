@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.multi_select_dropdown {
+  margin-bottom: 15rem;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  width: 300px;
+}
+.multi_select_dropdown:hover .multi_select_dropdown__options {
+  display: block;
+}
+
+.multi_select_dropdown__selected {
+  border: solid 1px #eee;
+  font-size: 14px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.multi_select_dropdown .multi_select_dropdown__selected > img {
+  height: 18px;
+}
+
+.multi_select_dropdown .multi_select_dropdown__options {
+  display: none;
+  position: absolute;
+  box-sizing: border-box;
+  left: 0;
+  width: 100%;
+  list-style: none;
+  padding-left: 0px;
+  border: solid 1px #eee;
+  padding: 5px 0px;
+  transform: translateY(-20px);
+}
+
+.multi_select_dropdown .multi_select_dropdown__option {
+  display: flex;
+  align-items: center;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.multi_select_dropdown .multi_select_dropdown__option:hover {
+  background-color: #eee;
+}
+.multi_select_dropdown .multi_select_dropdown__option_checkbox {
+  margin-right: 6px;
+}

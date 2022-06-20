@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { useSelector } from "react-redux";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import NavBar from "./components/NavBar/NavBar.jsx";
+import AddRecipe from "./pages/AddRecipe/index.jsx";
+import Home from "./pages/Home.jsx";
+import NotMatch from "./pages/NotMatch/index.jsx";
+import Recipe from "./pages/Recipe.jsx";
 
 function App() {
+  const dietas = useSelector((state) => state.diets);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <NavBar />
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/addReceta">
+          <AddRecipe diets={dietas.diets} />
+        </Route>
+        <Route path="/recipe/:id">
+          <Recipe />
+        </Route>
+        <Route path="*">
+          <NotMatch />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
