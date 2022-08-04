@@ -3,7 +3,7 @@
 # Henry
 # PI-FOODS
 ## Introduccion
-Este es un proyecto INdividual, el cual pone en practica todas las tecnologiuas aprendidas en Soyhenry bootcamp.
+Este es un proyecto individual, el cual pone en práctica todas las tecnologías aprendidas en Soyhenry bootcamp.
 
 ## Objetivos del Proyecto
 - Escribir una App con Redux, React, Express, Seuquelize
